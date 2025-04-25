@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap"; // Bootstrapコンポーネントをインポート
-import "./Header.css"
+import "./Header.css"; // CSSをインポート
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar className="custom-navbar" bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home" className="brand-font">創像工房 in front of . 一週間企画『H.B.D.』</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,7 +20,6 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    
   );
 }
 

@@ -1,8 +1,23 @@
-/* ベースのスタイル */
+/* ベースのスタイル
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+} */
+
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* 背景色 */
+  box-sizing: border-box;
+  padding-top: 70px; /* ヘッダーの高さ分だけ余白を加える */
 }
 
-
+.section {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}

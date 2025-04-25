@@ -1,20 +1,23 @@
+/* Header.css */
 .custom-navbar {
-    background-image: url('/images/background.webp'); /* publicフォルダ内の画像 */
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-  }
-  
-/* .brand-font{
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 1.8rem !important;
-    color:red !important;
-} */
+  position: sticky !important; /* ヘッダーを固定 */
+  top: 0;          /* 上端に固定 */
+  left: 0;
+  width: 100%;     /* 横幅を100%にして画面いっぱいに表示 */
+  z-index: 9999;   /* 最前面に表示（Bootstrapのデフォルトz-indexより高く設定） */
+  color: red;
+  /* background-image: url('/images/background.webp'); 背景画像 */
+  /* background-size: cover; */
+  /* background-position: center center; */
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* 半透明の背景色 */
+}
 
 .brand-font {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white; /* ブランド名の色を白に */
+}

@@ -11,11 +11,11 @@ import Popup from "./components/Popup"; // Popupコンポーネントをイン�
 
 function App() {
   return (
-    <BrowserRouter> {/* RouterはBrowserRouterに変更 */}
+    <BrowserRouter> 
       <Header />
       <div className="app-container">{}
         <Routes> 
-          <Route path="/" element={<Top />} /> componentをelementに変更
+          <Route path="/" element={<Top />} /> 
           <Route path="/news" element={<News />} />
           <Route path="/schedule" element={<ScheduleAndTicket />} />
           <Route path="/access" element={<Access />} />
