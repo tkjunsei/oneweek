@@ -1,0 +1,20 @@
+.custom-navbar {
+    background-image: url('/images/background.webp'); /* publicフォルダ内の画像 */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+/* .brand-font{
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem !important;
+    color:red !important;
+} */
+
+.brand-font {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }

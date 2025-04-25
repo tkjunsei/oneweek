@@ -1,0 +1,27 @@
+/* グローバルスタイル */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  background-color: blue;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+#root {
+  padding: 0px;
+}
+
+/* public/index.css */
+
+/* body全体の背景画像 */
+body {
+  background-image: url('./assets/background.webp'); /* 画像のパス */
+  background-size: cover; /* 背景画像を画面全体に広げる */
+  background-position: center center; /* 画像を中央に配置 */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* 画面全体をカバー */
+}
