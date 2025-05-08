@@ -1,0 +1,197 @@
+
+.view-content {
+    background-color: rgb(73, 18, 124); /* 深い紫（ミステリアス感！） */
+    color: #ffccff; /* 明るめピンクがかった白（映える！） */
+    border: 2px solid #38135c; /* エレガントなパープル（ボーダーに） */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 3px black; /* 文字にほんのり影をつけるとハロウィン感UP */
+    display: flex;
+    align-items: center; /* 中央揃え */
+    justify-content: flex-start; /* 画像とタイトルが左右に並ぶように */
+    flex-wrap: wrap; /* 画面幅が狭くなったときに、要素が折り返し表示される */
+}
+
+.view-img {
+    width: 30%;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex-shrink: 0; /* 画像が縮小しないように */
+}
+
+.view-title {
+    font-size: 8vw; /* 画面幅に応じて自動調整 */
+    margin: 0;
+    flex: 1;
+    white-space: nowrap; /* 文字が折り返さないように */
+    overflow: hidden; /* 文字がはみ出さないように */
+    text-overflow: ellipsis; /* はみ出す場合に省略記号を表示 */
+}
+
+
+/* News */
+.news-content {
+    display: block;
+    background-color: rgba(42, 43, 46, 0.8);
+    margin: 6px;
+    padding: 10px;
+}
+
+
+.news-content h3 {
+    text-align: center;
+    color: white;
+}
+
+.news-item {
+    background-color: rgba(20, 20, 20, 1);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: #f1f1f1; /* 白っぽい文字 */
+    text-decoration: underline; /* 下線を追加 */
+}
+
+/* Introduction */
+.intro-content {
+    display: block;
+    background-color: rgba(42, 43, 46, 0.8);
+    margin: 6px;
+    padding: 10px;
+    color: #f1f1f1;
+}
+
+.intro-content h1 {
+    text-align: center;
+}
+
+/* Story */
+.story-content {
+    display: block;
+    background-color: rgba(42, 43, 46, 0.8);
+    margin: 6px;
+    padding: 10px;
+    color: #f1f1f1;
+}
+
+.story-content h1 {
+    text-align: center;
+}
+
+/* Comment */
+.comment-content {
+    display: grid;
+    background-color: rgba(42, 43, 46, 0.8);
+    margin: 6px;
+    padding: 10px;
+    color: #f1f1f1;
+    white-space: pre-wrap; /* 改行を保持 */
+}
+
+.comment-content h1 {
+    text-align: center;
+}
+
+.comment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2列構成 */
+    gap: 10px; /* 要素間のスペース */
+    justify-content: center; /* 中央揃え */
+}
+.comment-item {
+    background-color: rgba(20, 20, 20, 1);
+    padding: 40px;
+    color: #f1f1f1; /* 白っぽい文字 */
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery-content {
+    display: block;
+    background-color: rgba(42, 43, 46, 0.8);
+    margin: 6px;
+    padding: 10px;
+    color: #f1f1f1;
+}
+
+
+.gallery-content .slide {
+    text-align: center;
+}
+
+.gallery-content img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block; /* インライン要素をブロック要素に変える */
+    margin-left: auto; /* 左のマージンを自動調整 */
+    margin-right: auto; /* 右のマージンを自動調整 */
+}
+
+
+.gallery-content p {
+    font-size: 16px;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+  
+/* Staff */
+.staff-content {
+    display: block;
+    background-color: rgba(42, 43, 46, 0.8); /* 半透明のダーク背景 */
+    margin: 6px;
+    padding: 10px;
+    color: #f1f1f1; /* 文字色 */
+}
+
+.staff-content h1 {
+    text-align: center;
+}
+
+/* スタッフロールの役職と名前 */
+.credits {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.role {
+    margin-bottom: 10px;
+}
+
+.center {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列に分ける */
+    /* gap: 5px; */
+    margin-top: 0px;
+}
+
+h2, h3 {
+    margin: 0;
+    font-size: 0em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    margin-top: 0px;
+    line-height: 1.4;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .roles-grid {
+        grid-template-columns: 1fr; /* 画面が狭いときは1列に並べる */
+    }
+}
+

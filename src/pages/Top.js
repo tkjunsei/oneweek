@@ -1,20 +1,20 @@
 import React from "react";
-import photo from '../assets/rough.jpg';
+import { TopView, TopNews, TopIntro, TopStory, TopComment, TopGallery, TopStaff } from "./for_components/ForTop.js";
 
-function Top() {
+function About() {
   return (
-    <div className="top-container">
-        <h1 className="top-header">創像工房 in front of.</h1>
-        <p className="top-description">
-            Welcome to our theater! We are dedicated to bringing you the best performances and experiences.
-        </p>
-        <img
-            src={photo}
-            alt="Theater"
-            className="top-image"
-        />
+    <div className="about-content">
+      <TopView />
+      <TopNews />
+      <TopIntro />
+      <TopStory />
+      <TopComment />
+      <TopGallery />
+      <TopStaff />
     </div>
   );
 }
 
-export default Top;
+export default About;
+
+// function 
